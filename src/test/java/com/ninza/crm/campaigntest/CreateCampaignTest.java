@@ -40,7 +40,6 @@ public void createCampaignWithExpectedDateTest() throws IOException {
 				HomePage hp = new HomePage(driver);
 				hp.getCampaignLink().click();
 				
-				
 				//Create campaign with Mandatory fields
 				// Click on create campaign
 				CampaignPage cp = new CampaignPage(driver);
