@@ -72,7 +72,7 @@ public void createCampaignWithExpectedDateTest() throws IOException {
 				
 				//Assert.assertEquals(msg, "Campaign" +campaignName+ " succesfully added", "Campign is not created");
 				Assert.assertTrue(msg.contains("Successfully Added"), "Campaign is not created");
-
+				System.out.println("Campign created successfully with expected date");
 			}
 @Test (groups = "Regression")
 public void createCampaignWithMandatoryFieldsTest() throws IOException {
