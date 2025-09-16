@@ -165,6 +165,7 @@ public void createCampaignWithMandatoryFieldsTest() throws IOException {
 //		}
 		 
 		 Assert.assertTrue(createdStatus.contains("Open"),"Status is missing");
+		 System.out.println("Campaign created with Open status");
 	}
 
 	
