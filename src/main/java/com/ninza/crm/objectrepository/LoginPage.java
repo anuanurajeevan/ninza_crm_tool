@@ -38,7 +38,7 @@ public class LoginPage {
 	
 	public void loginToApp( String url, String un, String pwd) {
 		
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.get(url);
 		

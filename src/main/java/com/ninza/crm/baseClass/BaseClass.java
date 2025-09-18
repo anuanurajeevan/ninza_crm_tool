@@ -66,13 +66,12 @@ public class BaseClass {
 		 
 		  sdriver = driver;
 		  System.out.println("Launch the browser");
-		  driver.manage().window().setSize(new Dimension(1920, 1080));
-		  wUtil.maximizeWindow(driver);
-		  System.out.println("Browser size - "+driver.manage().window().getSize().toString());
+		  //driver.manage().window().setSize(new Dimension(1920, 1080));
+		  //System.out.println("Browser size - "+driver.manage().window().getSize().toString());
 	  }
   @BeforeMethod(groups = {"Smoke","Regression"})
   public void beforeMethod() throws IOException  {
-	  
+	  System.out.println("Browser size - "+driver.manage().window().getSize().toString());
 	  		//get the values
 			String BROWSER = pUtil.toGetDataFromPropertiesFile("browser");
 		   // String BROWSER = System.getProperty("browser");===for maven parameter, use this for reading from the command line
