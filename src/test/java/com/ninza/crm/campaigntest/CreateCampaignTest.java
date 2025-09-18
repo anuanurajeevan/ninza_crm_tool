@@ -24,7 +24,7 @@ import com.ninza.crm.objectrepository.CreateCampaignPage;
 import com.ninza.crm.objectrepository.HomePage;
 import com.ninza.crm.objectrepository.LoginPage;
 
-//@Listeners(com.ninza.crm.listnerutility.ListnerImplementation.class)
+@Listeners(com.ninza.crm.listnerutility.ListnerImplementation.class)
 public class CreateCampaignTest extends BaseClass {
 	
 @Test (groups = {"Smoke","Regression"})	
