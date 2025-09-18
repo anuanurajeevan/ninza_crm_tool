@@ -62,8 +62,10 @@ public class BaseClass {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
+		 
 		  sdriver = driver;
 		  System.out.println("Launch the browser");
+		  wUtil.maximizeWindow(driver);
 	  }
   @BeforeMethod(groups = {"Smoke","Regression"})
   public void beforeMethod() throws IOException  {
