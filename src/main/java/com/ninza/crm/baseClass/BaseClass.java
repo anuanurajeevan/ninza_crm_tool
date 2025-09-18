@@ -17,6 +17,7 @@ import org.testng.annotations.BeforeClass;
 
 import java.io.IOException;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -65,6 +66,7 @@ public class BaseClass {
 		 
 		  sdriver = driver;
 		  System.out.println("Launch the browser");
+		  driver.manage().window().setSize(new Dimension(1920, 1080));
 		  wUtil.maximizeWindow(driver);
 		  System.out.println("Browser size - "+driver.manage().window().getSize().toString());
 	  }
