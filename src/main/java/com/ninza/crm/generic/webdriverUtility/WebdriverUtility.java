@@ -23,6 +23,7 @@ public class WebdriverUtility {
 	
 	public ChromeOptions getCustomChromeOptions() {
 	    ChromeOptions options = new ChromeOptions();
+	    options.addArguments("--window-size=1920,1080"); 
 	    Map<String, Object> prefs = new HashMap<>();
 	    prefs.put("profile.password_manager_leak_detection", false); // disable password manager leak detection
 	    options.setExperimentalOption("prefs", prefs);
