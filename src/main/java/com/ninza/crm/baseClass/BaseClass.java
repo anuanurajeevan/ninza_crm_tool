@@ -66,6 +66,7 @@ public class BaseClass {
 		  sdriver = driver;
 		  System.out.println("Launch the browser");
 		  wUtil.maximizeWindow(driver);
+		  System.out.println("Browser size - "+driver.manage().window().getSize().toString());
 	  }
   @BeforeMethod(groups = {"Smoke","Regression"})
   public void beforeMethod() throws IOException  {
