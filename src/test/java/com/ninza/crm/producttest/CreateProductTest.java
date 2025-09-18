@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ninza.crm.baseClass.BaseClass;
@@ -18,7 +19,7 @@ import com.ninza.crm.objectrepository.HomePage;
 import com.ninza.crm.objectrepository.LoginPage;
 import com.ninza.crm.objectrepository.ProductsPage;
 
-
+@Listeners(com.ninza.crm.listnerutility.ListnerImplementation.class)
 public class CreateProductTest extends BaseClass{
 @Test (groups = {"Smoke","Regression"})
 	public void createProductTest() throws IOException, InterruptedException {
